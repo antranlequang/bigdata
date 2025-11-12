@@ -50,8 +50,14 @@ docker-compose.yml
 .git/
 .gitignore
 
-# Documentation (optional)
-README-FORECASTING.md
-README-MinIO.md
-design.md
-treemap.md
+# Large files for faster deployment
+*.csv
+*.json.bak
+logs/
+pids/
+coverage/
+.nyc_output/
+
+# Development artifacts
+*.backup
+*.old

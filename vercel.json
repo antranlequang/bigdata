@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "npm run build",
+  "buildCommand": "pip install --no-cache-dir -r requirements-vercel.txt && npm ci && npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "functions": {
@@ -17,12 +17,12 @@
     "MINIO_SECRET_KEY": "zuf+tfteSlswRu7BJ86wekitnifILbZam1KYY3TG",
     "MINIO_USE_SSL": "true",
     "MINIO_BUCKET": "crypto-data",
-    "PYTHON_SERVICE_URL": "https://bigdata-five.vercel.app"
+    "PYTHON_SERVICE_URL": "https://big-data-henna.vercel.app"
   },
   "redirects": [
     {
       "source": "/api/python/:path*",
-      "destination": "https://bigdata-five.vercel.app/api/:path*"
+      "destination": "https://big-data-henna.vercel.app/api/:path*"
     }
   ]
 }

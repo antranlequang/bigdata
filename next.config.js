@@ -1,7 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // App router is now default, no experimental config needed
-  output: 'standalone',
+  // Optimized for fast Vercel deployment
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
   
   // Environment variables for MinIO
   env: {

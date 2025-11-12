@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { fetchAvailableCoins } from '@/lib/api'
+import { fetchAvailableCoins } from '../../../lib/api'
 
 // GET route to fetch available coins from CoinGecko API
 export async function GET(request: NextRequest) {

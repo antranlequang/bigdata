@@ -11,7 +11,7 @@ import {
   ResponsiveContainer,
   Legend
 } from 'recharts'
-import { formatCurrency } from '@/lib/utils'
+import { formatCurrency } from '../lib/utils'
 
 interface ForecastData {
   coin_id: string

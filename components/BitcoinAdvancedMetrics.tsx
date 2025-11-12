@@ -1,11 +1,11 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
+import { Button } from './ui/button'
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from 'recharts'
-import { fetchBitcoinHistory } from '@/lib/api'
-import type { HistoricalDataPoint } from '@/lib/types'
+import { fetchBitcoinHistory } from '../lib/api'
+import type { HistoricalDataPoint } from '../lib/types'
 
 interface BitcoinAdvancedMetricsProps {
   currentPrice: number

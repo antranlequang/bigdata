@@ -10,8 +10,8 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts'
-import { formatCurrency } from '@/lib/utils'
-import type { HistoricalDataPoint } from '@/lib/types'
+import { formatCurrency } from '../lib/utils'
+import type { HistoricalDataPoint } from '../lib/types'
 
 interface PriceChartProps {
   data: HistoricalDataPoint[]

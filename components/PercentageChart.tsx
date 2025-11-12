@@ -10,7 +10,7 @@ import {
   Tooltip,
   ResponsiveContainer,
 } from 'recharts'
-import type { HistoricalDataPoint } from '@/lib/types'
+import type { HistoricalDataPoint } from '../lib/types'
 
 interface PercentageChartProps {
   data: HistoricalDataPoint[]

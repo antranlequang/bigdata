@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { dataCollector } from '@/lib/data-collector'
+import { dataCollector } from '../../../lib/data-collector'
 
 // GET route to check data collector status
 export async function GET(request: NextRequest) {

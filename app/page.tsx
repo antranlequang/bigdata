@@ -1,17 +1,17 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
+import { Button } from '../components/ui/button'
 import RealTimePriceChart from '../components/RealTimePriceChart'
 import ComprehensiveMinIOCharts from '../components/ComprehensiveMinIOCharts'
 import PriceForecastChart from '../components/PriceForecastChart'
 import MarketCapTreemap from '../components/MarketCapHeatmap'
 import MetricCard from '../components/MetricCard'
 import NewsAnalysis from '../components/NewsAnalysis'
-import { fetchCoinData } from '@/lib/api'
-import { formatCurrency, formatMarketCap } from '@/lib/utils'
-import type { CryptoData, HistoricalDataPoint } from '@/lib/types'
+import { fetchCoinData } from '../lib/api'
+import { formatCurrency, formatMarketCap } from '../lib/utils'
+import type { CryptoData, HistoricalDataPoint } from '../lib/types'
 
 export default function CryptoDashboard() {
   const [cryptoData, setCryptoData] = useState<CryptoData | null>(null)

@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
-import { fetchBitcoinRealTimePrice } from '@/lib/api'
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card'
+import { fetchBitcoinRealTimePrice } from '../lib/api'
 
 interface BitcoinRealTimePriceProps {
   onPriceUpdate?: (price: number) => void

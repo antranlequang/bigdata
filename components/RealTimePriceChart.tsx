@@ -10,7 +10,7 @@ import {
   AreaChart,
   Area
 } from 'recharts'
-import { formatCurrency } from '@/lib/utils'
+import { formatCurrency } from '../lib/utils'
 
 interface RealTimeDataPoint {
   timestamp: string

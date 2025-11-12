@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { readCoinDataFromMinio, readCryptoDataFromMinio, initializeMinio } from '@/lib/minio-service'
-import { dataCollector } from '@/lib/data-collector'
+import { readCoinDataFromMinio, readCryptoDataFromMinio, initializeMinio } from '../../../lib/minio-service'
+import { dataCollector } from '../../../lib/data-collector'
 
 export const runtime = 'nodejs'
 export const dynamic = 'force-dynamic'

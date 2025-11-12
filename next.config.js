@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Optimized for fast Vercel deployment
-  swcMinify: true,
+  // Optimized for fast Vercel deployment  
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
   },
